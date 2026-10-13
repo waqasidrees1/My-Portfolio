@@ -1,6 +1,6 @@
 # Waqas Idrees portfolio
 
-Live site: https://waqasidrees1.github.io/My-Portfolio/
+Live site: https://waqasidrees1.github.io/
 
 The complete static portfolio is stored in `portfolio-site.zip`. GitHub Actions unpacks it and publishes the HTML, JavaScript, images, robots.txt and sitemap.xml to GitHub Pages. The archive contains 52 projects with platform tabs and six-at-a-time pagination.
 
