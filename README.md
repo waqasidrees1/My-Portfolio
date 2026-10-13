@@ -1,16 +1,12 @@
 # Waqas Idrees portfolio
 
-Prepared for the public repository `waqasidrees1/My-Portfolio`.
-Target URL: https://waqasidrees1.github.io/My-Portfolio/
+Live site: https://waqasidrees1.github.io/My-Portfolio/
 
-## Deployment
-1. Confirm the connected GitHub account and check whether this repository already exists. Do not overwrite another site.
-2. Create the public repository if it does not exist. Upload this folder's contents to its main branch, retaining .github/workflows/pages.yml and the dist directory.
-3. In Settings → Pages, choose GitHub Actions as the source.
-4. Run the Deploy portfolio to GitHub Pages workflow from Actions if the initial push occurred before Pages was enabled.
-5. Confirm the workflow succeeded and check homepage, images, tabs, six-at-a-time pagination, contact draft, robots.txt and sitemap.xml.
+The complete static portfolio is stored in `portfolio-site.zip`. GitHub Actions unpacks it and publishes the HTML, JavaScript, images, robots.txt and sitemap.xml to GitHub Pages. The archive contains 52 projects with platform tabs and six-at-a-time pagination.
 
-If the account or destination URL differs, update the canonical URL, OG URL/image, JSON-LD URLs, robots.txt sitemap URL and sitemap.xml before publishing.
-No dependencies or build step. Only dist is published. Source updates to main trigger deployments. GitHub Pages does not collect the enquiry form: it opens an email draft. Analytics events still need a central analytics integration.
+## Updates
+Extract `portfolio-site.zip`, edit the files, and create a ZIP with `index.html` and `assets/` directly at its root. Replace `portfolio-site.zip` on `main`. The Publish portfolio workflow deploys automatically; it can also be run manually from Actions.
 
-The previous hosted site remains available until the GitHub deployment is verified. After migration, choose one primary URL; avoid maintaining two independently indexed copies. Do not delete the previous site before verification.
+Keep Settings → Pages → Source set to GitHub Actions. Publishing from the repository branch would show this README rather than the portfolio.
+
+The project brief opens an email draft; no backend collects submissions. A/B diagnostics remain browser-local until aggregate analytics is connected. Future changes made in ChatGPT must also be committed here to update GitHub Pages.
